@@ -75,7 +75,7 @@ if __name__ == "__main__" :
     #
 #    incoming_gdrive_message_handler = MessageHandler(
 #        incoming_gdrive_message_f,
-#        filters=Filters.command([f"{GLEECH_COMMAND}"]) & Filters.chat(chats=AUTH_CHANNEL)
+#        filters=Filters.command(["gleech@assfile_bot"]) & Filters.chat(chats=AUTH_CHANNEL)
 #    )
 #    app.add_handler(incoming_gdrive_message_handler)
     #
@@ -178,13 +178,13 @@ if __name__ == "__main__" :
     #
     save_thumb_nail_handler = MessageHandler(
         save_thumb_nail,
-        filters=Filters.command(["savethumbnail"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["savethumbnail@assfile_bot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(save_thumb_nail_handler)
     #
     clear_thumb_nail_handler = MessageHandler(
         clear_thumb_nail,
-        filters=Filters.command(["clearthumbnail"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["clearthumbnail@assfile_bot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(clear_thumb_nail_handler)
     #
