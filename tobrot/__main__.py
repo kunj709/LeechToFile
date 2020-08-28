@@ -123,7 +123,7 @@ if __name__ == "__main__" :
     #
     cancel_message_handler = MessageHandler(
         cancel_message_f,
-        filters=Filters.command(["cancle@assfile_bot]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["cancel@assfile_bot]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(cancel_message_handler)
     #
